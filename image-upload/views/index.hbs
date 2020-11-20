@@ -1,0 +1,14 @@
+<h1>Best Movies of the World</h1>
+<div class="movies-wrapper">
+  {{#each movies}}
+    <div class="movie-item">
+      <h4>{{title}}</h4>
+      <p>{{description}}</p>
+      <img src="{{imgPath}}">
+      <a href="/movie/delete/{{_id}}">❌</a>
+    </div>
+  {{else}}
+  <p>There are no movies yet! 🤷‍♀️ 🤷‍♂️</p>
+  {{/each}}
+</div>
+<a href="/movie/add">Add a movie</a>
